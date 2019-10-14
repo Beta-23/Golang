@@ -20,9 +20,14 @@ func main() {
 	cal()
 	numgen()
 	
-	var num1, num2 = 8.5, 6.5
+	// The := short assignment statement can be used in place of a var declaration with implicit (no) type
+	num1, num2 := 8.5, 6.1
 	fmt.Println("4. The sum of", num1, "and", num2, "is")
 	fmt.Println(add(num1,num2))
+	w1, w2 := "Hi", "there, way to Go!"
+	fmt.Println("----------------------")
+	fmt.Println(multiple(w1,w2))
+
 }
 
 // This will execute via the main function
@@ -38,8 +43,14 @@ func numgen() {
 	fmt.Println()
 }
 
-func add(x, y float64) float64 {
+// Adding function with datatype of float and precision of 64bits
+func add(x,y float64) float64 {
 	return x+y
+}
+
+// Adding function with multiple stings parameters
+func multiple(a,b string) (string, string) {
+	return a,b
 }
 
 
