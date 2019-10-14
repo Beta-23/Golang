@@ -20,8 +20,7 @@ func main() {
 	cal()
 	numgen()
 	
-	var num1 float64 = 8.5
-	var num2 float64 = 6.5
+	var num1, num2 = 8.5, 6.5
 	fmt.Println("4. The sum of", num1, "and", num2, "is")
 	fmt.Println(add(num1,num2))
 }
@@ -39,7 +38,7 @@ func numgen() {
 	fmt.Println()
 }
 
-func add(x float64, y float64) float64 {
+func add(x, y float64) float64 {
 	return x+y
 }
 
