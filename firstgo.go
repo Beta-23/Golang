@@ -1,10 +1,38 @@
 package main
 
 // This will import the format library
+import (
+				"fmt"
+				"math"
+				"math/rand"
+				"time")
 
-import "fmt"
-
+// main ()is the only function that will run in the program
 func main() {
-	fmt.Println ("Welcome to GO!")
+	fmt.Println("=============================") 
+	fmt.Println("[ Welcome Using GO program! ]") 
+	fmt.Println("=============================")
+	fmt.Println()
+	fmt.Println("===============================")
+  fmt.Println("LETS LEARN SOMETHING NEW TODAY!")
+  fmt.Println("===============================")
+	fmt.Println()
+	cal()
+	numgen()
+	
 }
+
+// This will execute via the main function
+func cal() {
+	fmt.Println ("1. Pi is", math.Pi)
+	fmt.Println ("2. The square root of 36 is",math.Sqrt(36))
+}
+
+// This will generate a number between 0-99
+func numgen() {
+	rand.Seed(time.Now().UnixNano())
+	fmt.Println ("3. A number between 0 and 99!",rand.Intn(100))
+	fmt.Println()
+}
+
 
