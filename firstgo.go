@@ -22,11 +22,19 @@ func main() {
 		fmt.Print("\x0c", l) // Clear screen and print field.
 		time.Sleep(time.Second / 30)
 	}
+	fmt.Println("===============================")
+  fmt.Println("TESTING POINTERS IN MEMORY!")
+  fmt.Println("===============================")
 	// Testing Pointers
 		z := 15
-		r := &z // memory address
-		fmt.Println(r)
-		fmt.Println(*r) // Value in memory address
+		r := &z // memory address allocation via &symbol
+		fmt.Println(r) // memory space
+		fmt.Println(*r) // Value in memory address =15
+		*r = 5 // new value assigment
+		fmt.Println(z) // =5
+		*r = *r**r // another new value assigment
+		fmt.Println(z) // new value
+		fmt.Println(*r)
 
 	fmt.Println("===============================")
   fmt.Println("FIBONACCI NUMBERS!")
@@ -47,6 +55,8 @@ func main() {
 	num1, num2 := 8.5, 6.1
 	fmt.Println("4. The sum of", num1, "and", num2, "is")
 	fmt.Println(add(num1,num2))
+	fmt.Println("====")
+	fmt.Println()
 	w1, w2 := "Hi", "there, way to Go!"
 	fmt.Println("----------------------")
 	fmt.Println(multiple(w1,w2))
