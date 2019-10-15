@@ -2,7 +2,6 @@ package main
 
 // This will import the format library
 import (
-				
 				"fmt"
 				"bytes"
 				"math"
@@ -12,19 +11,27 @@ import (
 
 // main ()is the only function that will run in the program
 func main() {
+
 	fmt.Println("=============================") 
 	fmt.Println("[ Welcome To GO programing! ]") 
 	fmt.Println("=============================")
 	fmt.Println()
 	l := NewLife(40, 15)
-	for i := 0; i < 25; i++ {
+	for i := 0; i < 10; i++ {
 		l.Step()
 		fmt.Print("\x0c", l) // Clear screen and print field.
 		time.Sleep(time.Second / 30)
 	}
+	// Testing Pointers
+		z := 15
+		r := &z // memory address
+		fmt.Println(r)
+		fmt.Println(*r) // Value in memory address
+
 	fmt.Println("===============================")
   fmt.Println("FIBONACCI NUMBERS!")
   fmt.Println("===============================")
+  
   f := fib()
 	// Function calls are evaluated left-to-right.
 	fmt.Println(f(), f(), f(), f(), f())
@@ -173,6 +180,3 @@ func (l *Life) String() string {
 	}
 	return buf.String()
 }
-
-
-
