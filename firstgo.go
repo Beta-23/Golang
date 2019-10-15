@@ -13,23 +13,21 @@ import (
 // main ()is the only function that will run in the program
 func main() {
 	fmt.Println("=============================") 
-	fmt.Println("[ Welcome Using GO program! ]") 
+	fmt.Println("[ Welcome To GO programing! ]") 
 	fmt.Println("=============================")
 	fmt.Println()
 	l := NewLife(40, 15)
-	for i := 0; i < 1; i++ {
+	for i := 0; i < 25; i++ {
 		l.Step()
 		fmt.Print("\x0c", l) // Clear screen and print field.
 		time.Sleep(time.Second / 30)
-
-		
+	}
 	fmt.Println("===============================")
   fmt.Println("FIBONACCI NUMBERS!")
   fmt.Println("===============================")
   f := fib()
 	// Function calls are evaluated left-to-right.
 	fmt.Println(f(), f(), f(), f(), f())
-	}
 	fmt.Println()
 	fmt.Println("===============================")
   fmt.Println("LETS LEARN SOMETHING NEW TODAY!")
