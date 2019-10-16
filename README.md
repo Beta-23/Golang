@@ -2,9 +2,9 @@
 First try at the Go language.
 
 ## Installation
-- [Download Go at](https://golang.org/dl/)
+Download Golang at: [golang.org](https://golang.org/dl/)
 ```Go
-Go 1.13
+go1.13
 ```
 ## To run files, enter command:
 ```Go
