@@ -2,7 +2,7 @@
 First try at the Go language.
 
 ## Installation
-Download Golang [golang.org](https://golang.org/dl/)
+Download [Golang](https://golang.org/dl/)
 ```Go
 go1.13
 ```
