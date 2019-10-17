@@ -22,7 +22,7 @@ func (c car) mph() float64 {
 	return float64(c.gas_pedal) * (c.top_speed_kmh/usixteenbitmax/kmh_multiple)
 }
 
-// pointer receiver
+// pointer receiver/modify values, use for scale and efficiency
 func (c *car) new_top_speed(newspeed float64) {
 	c.top_speed_kmh = newspeed
 }

@@ -17,7 +17,7 @@ func main() {
 	fmt.Println("=============================")
 	fmt.Println()
 	l := NewLife(40, 15)
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 1; i++ {
 		l.Step()
 		fmt.Print("\x0c", l) // Clear screen and print field.
 		time.Sleep(time.Second / 30)

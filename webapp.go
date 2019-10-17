@@ -3,13 +3,13 @@ package main
 import ("fmt"
 				"net/http"
 				)
+
 // index_handler takes in two paramaters, response and request
 func index_handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "=============================")
-	fmt.Fprintf(w, "[ GO is awesome! ]")
+	fmt.Fprintf(w,   "[ <h1>GO is awesome!</h1> ]")
 	fmt.Fprintf(w, "=============================")
 }
-
 
 // firstgo_handler takes in two paramaters, response and request
 func firstgo_handler(w http.ResponseWriter, r *http.Request) {
